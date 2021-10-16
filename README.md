@@ -18,6 +18,14 @@ npm i el-search-form -S
 
 ## 使用
 
+记得在引入`element-ui`的样式后，引入`el-search-form`的样式：
+```js
+// 需要有scss预处理器
+import 'el-search-form/src/style.scss'
+// 纯css
+// import 'el-search-form/src/style.css'
+```
+
 在`el-search-form`内直接书写`el-form-item`即可，不需要考虑`label-width`属性
 
 ```html
