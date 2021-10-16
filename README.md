@@ -91,9 +91,9 @@ export default {
 |:---:|:---:|:---:|:---:|
 |defaultExpand|是否默认展开|`boolean`|`false`|
 |size|等同于el-form的size|`string`|-|
+|labelWidth|等同于el-form的labelWidth，不填时会取最长的控件label的长度（中文1em，英文0.5em）|`string`|-|
 |labelPosition|等同于el-form的labelPosition，不支持top|`string`|`'right'`|
 |labelSuffix|等同于el-form的labelSuffix|`string`|`'：'`|
-|size|等同于el-form的size|`string`|-|
 |gutter|等同于el-row的gutter|`number`|`20`|
 |xs|父级宽度<768px时，每行能有多少个控件（包含操作按钮组），需要是24的因数|`number`|`1`|
 |sm|父级宽度>=768px|`number`|`2`|
