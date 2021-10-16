@@ -1,0 +1,30 @@
+.el-search-form {
+  &__action {
+    margin-left: auto;
+    text-align: right;
+
+    &-button {
+      padding-left: 0;
+
+      i {
+        margin-left: 0.5em;
+      }
+    }
+  }
+
+  > .el-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .el-col.hide {
+    display: none;
+  }
+
+  .el-select,
+  .el-date-editor.el-input,
+  .el-date-editor--daterange,
+  .el-date-editor--daterange.el-input__inner {
+    width: 100%;
+  }
+}

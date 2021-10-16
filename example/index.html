@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+  <title>Title</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/element-ui@2.15.6/lib/theme-chalk/index.css">
+  <link rel="stylesheet" href="../src/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/element-ui@2.15.6/lib/index.js"></script>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+<div id="app" style="padding: 1em">
+  <el-search-form label-position="left" @search="onSearch" @reset="onReset">
+    <el-form-item label="v1">
+      <el-input v-model="searchForm.v1"></el-input>
+    </el-form-item>
+    <el-form-item label="v2">
+      <el-input v-model="searchForm.v2"></el-input>
+    </el-form-item>
+    <el-form-item label="v3">
+      <el-input v-model="searchForm.v3"></el-input>
+    </el-form-item>
+    <el-form-item label="v4">
+      <el-select v-model="searchForm.v4">
+        <el-option v-for="i in 4" :key="i" :label="i" :value="i"></el-option>
+      </el-select>
+    </el-form-item>
+    <el-form-item label="v5">
+      <el-date-picker v-model="searchForm.v5" type="date" value-format="yyyy-MM-dd"></el-date-picker>
+    </el-form-item>
+    <el-form-item label="v6">
+      <el-date-picker v-model="searchForm.v6" type="daterange" value-format="yyyy-MM-dd"></el-date-picker>
+    </el-form-item>
+  </el-search-form>
+</div>
+</body>
+<script type="module">
+  import ElSearchForm from '../src/index.js'
+
+  window.Vue.prototype.$ELEMENT.size = 'small'
+
+  new window.Vue({
+    el: '#app',
+    components: { ElSearchForm },
+    data() {
+      return {
+        searchForm: {
+          v1: null,
+          v2: null,
+          v3: null,
+          v4: null,
+          v5: null
+        }
+      }
+    },
+    methods: {
+      onSearch() {
+        alert('查询')
+      },
+      onReset() {
+        alert('重置')
+      }
+    }
+  })
+</script>
+</html>

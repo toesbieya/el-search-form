@@ -1,0 +1,29 @@
+{
+  "name": "el-search-form",
+  "version": "0.0.1",
+  "description": "基于element-ui的自适应搜索表单",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "scripts": {
+    "build:css": "node build/css.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toesbieya/el-search-form.git"
+  },
+  "keywords": [
+    "element-ui"
+  ],
+  "author": "toesbieya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/toesbieya/el-search-form/issues"
+  },
+  "homepage": "https://github.com/toesbieya/el-search-form#readme",
+  "devDependencies": {
+    "@types/vue": "^2.0.0",
+    "cssnano": "^5.0.8",
+    "rimraf": "^3.0.2",
+    "sass": "^1.43.2"
+  }
+}
