@@ -4,7 +4,7 @@
 
 其使用`window.ResizeObserver`来监听容器大小变化，如果有兼容需求，那么需要自行引入`resize-observer-polyfill`。
 
-- [在线预览](https://toesbieya.github.io/el-search-form)
+- [在线预览](https://toesbieya.github.io/el-search-form/example/index.html)
 
 ## 安装
 
